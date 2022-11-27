@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coder-Boy</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ----------- Header Section ----------- -->
+    <header style="position: webkit-sticky; position:sticky; top: 0 ; z-index: 1;">
+        <!-- ----------- Nav bar from bootstrap START ----------- -->
+        <nav class="navbar  navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"> <img src="/img/logo.png" style="width: 40px;">Coder-Boy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a style="font-weight: 500;" class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/About.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="fs.html">Full stack Developer</a></li>
+                                <li><a class="dropdown-item" href="fd.html">Frontend Developer</a></li>
+                                <li><a class="dropdown-item" href="bd.html">Backend Developer</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="wp.html">Word-press </a></li>
+                                <li><a class="dropdown-item" href="gd.html">Graphic Designer</a></li>
+                                <li><a class="dropdown-item" href="se.html">SEO Expert </a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Sign Up / Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- ----------- Nar bar from bootstrap END ----------- -->
+    </header>
+
+    <!-- ----------- Main Section ----------- -->
+    <main>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header p-5 pb-4 border-bottom-0">
+                            <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                            <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body p-5 pt-0">
+                            <form class="">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control rounded-3" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign
+                                    up</button>
+                                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                                <hr class="my-4">
+                                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                                    <svg class="bi me-1" width="16" height="16">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                    Sign up with Twitter
+                                </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                                    <svg class="bi me-1" width="16" height="16">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                    Sign up with Facebook
+                                </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                                    <svg class="bi me-1" width="16" height="16">
+                                        <use xlink:href="#github"></use>
+                                    </svg>
+                                    Sign up with GitHub
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------- Crousel from bootstrap START ----------- -->
+        <div class="container mt-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/frontend.jfif" class="d-block w-100" alt="fullstack">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5> <button class="btn btn-primary"> Fullstack Developer </button></h5>
+                            <p class="bg-dark p-3 rounded-4">Some representative placeholder content for the first
+                                slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/photo-1563986768494-4dee2763ff3f.jfif" class="d-block w-100" alt="..">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="btn btn-primary">Frontend Developer</h5>
+                            <p class="bg-dark p-3 rounded-4">Some representative placeholder content for the second
+                                slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/photo-1566207462754-97c86c31db3d.jfif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="btn btn-primary">Backend Developer</h5>
+                            <p class="bg-dark p-3 rounded-4">Some representative placeholder content for the third
+                                slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- ----------- Crousel from bootstrap END ----------- -->
+
+        <!-- ----------- second section START ----------- -->
+        <div class="m-5" style="height: 40px;"> </div>
+        <h5 style="padding-bottom: 5px; position: webkit-sticky; font-weight: normal; position:sticky; top: 8vh ; z-index: 1;"
+            class="bg-light text-dark px-3 ">
+            My Project </h5>
+        <!-- ----------- Services section START ----------- -->
+        <div class="row container m-auto row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/img/lambo.png" alt="">
+                    <div class="card-body">
+                        <p class="card-text">A moving laborgini using HTML, CSS & JS
+                        <p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="width: 100%; text-align: center;">
+                                <a target="_blank" href="https://lamborghini.ashokbhaargaw.repl.co/"
+                                    class="btn btn-sm btn-outline-success ">visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/img/tictactoe.png" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Tic Tac Toe using HTML, CSS & JS
+                        <p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="width: 100%; text-align: center;">
+                                <a target="_blank" href="https://tic-tac-toe.ashokbhaargaw.repl.co/"
+                                    class="btn btn-sm btn-outline-success ">visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/img/clock.png" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Digital clock using HTML, CSS & JS
+                        <p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="width: 100%; text-align: center;">
+                                <a target="_blank" href="https://Digital-clock.ashokbhaargaw.repl.co"
+                                    class="btn btn-sm btn-outline-success ">visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/img/darkmenu.png" alt="">
+                    <div class="card-body">
+                        <p class="card-text">day and dark mode using HTML, CSS & JS
+                        <p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="width: 100%; text-align: center;">
+                                <a target="_blank" href="https://dark-mode-menu.ashokbhaargaw.repl.co/"
+                                    class="btn btn-sm btn-outline-success ">visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/img/win11.png" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Windows 11 initial look using HTML, CSS & JS
+                        <p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="width: 100%; text-align: center;">
+                                <a target="_blank" href="https://windows-11.ashokbhaargaw.repl.co/"
+                                    class="btn btn-sm btn-outline-success ">visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/img/dino.png" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Dino Game using HTML, CSS & JS
+                        <p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="width: 100%; text-align: center;">
+                                <a target="_blank" href="https://dr-dino.ashokbhaargaw.repl.co/"
+                                    class="btn btn-sm btn-outline-success ">visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 50px;"> </div>
+
+
+        <!-- ----------- Services section END ----------- -->
+
+        <!-- ----------- second section END ----------- -->
+
+
+    </main>
+
+    <footer>
+        <!-- ----------- footer section START ----------- -->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a target="_blank" href="https://www.facebook.com/ashokbhaargaw"> <i
+                                class="fa-brands fa-2x fa-facebook"> </i> </a> </li>
+                    <li class="ms-3"><a target="_blank" href="https://www.linkedin.com/in/ashokbhaargaw/"> <i
+                                class="fa-brands fa-2x fa-linkedin"> </i> </a> </li>
+                    <li class="ms-3"><a target="_blank" href="https://twitter.com/AshokBhaargaw"> <i
+                                class="fa-brands fa-2x fa-twitter"> </i> </a> </li>
+                    <li class="ms-3"><a target="_blank" href="https://instagram.com/AshokBhaargaw"> <i
+                                class="fa-brands fa-2x fa-instagram"> </i> </a> </li>
+
+
+                </ul>
+            </footer>
+        </div>
+        <!-- ----------- footer section END ----------- -->
+
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Javascript Cdn's  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
